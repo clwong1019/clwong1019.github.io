@@ -4,10 +4,10 @@
             console.log("navigator: ", navigator.userAgent)
             if (navigator.userAgent.toLowerCase().match(/android/)) {
                 console.log( "reading js");
-                document.write('<script charset="utf-8" src="/js/slim_android/cordova.js"><\/script>');
+                document.write('<script charset="utf-8" src="/js/android/cordova.js"><\/script>');
                 document.write('<script charset="utf-8" src="/js/js_lib/common.js"><\/script>');
             } else if (navigator.userAgent.toLowerCase().match(/iphone/) || navigator.userAgent.toLowerCase().match(/ipad/) || navigator.userAgent.toLowerCase().match(/ipod/)) {
-                document.write('<script charset="utf-8" src="/js/slim_ios/cordova.js"><\/script>');
+                document.write('<script charset="utf-8" src="/js/ios/cordova.js"><\/script>');
                 document.write('<script charset="utf-8" src="/js/js_lib/common.js"><\/script>');
             }
         } else {
@@ -20,7 +20,6 @@
 
     <body>
         <p>Testing</p>
-        <p> need to include the cordova js sent from Freddy</p>
     </body>
 
 </html>
