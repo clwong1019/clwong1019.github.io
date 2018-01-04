@@ -2,6 +2,8 @@ $(document).ready(function() {
     document.addEventListener("deviceready", onDeviceReadyTouch, false);
 });
 
+$(document).getElementById('write').addEventListener('click', writeToLocal, false);
+
 function onDeviceReadyTouch() {
     init3d();
     startPdfHandler();
@@ -46,3 +48,8 @@ function startPdfHandler() {
 }
 
 
+function writeToLocal() {
+    var tempStorage = window.sessionStorage;
+    window.localStorage.setItem("key", "value");
+
+}
