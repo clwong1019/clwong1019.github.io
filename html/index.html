@@ -14,7 +14,25 @@
             console.log("don't need to include cordova, already included");
         }
     </script>
-
+  <script type="text/javascript" charset="utf-8">
+    
+        // Wait for device API libraries to load
+        //
+        function onLoad() {
+          console.log("onLoad()");
+            document.addEventListener("deviceready", onDeviceReady, false);
+            console.log("onLoad()2");
+        }
+    
+        // device APIs are available
+        //
+        function onDeviceReady() {
+          alert("DeviceReady");
+          // console.log("device: ", device);
+            // Now safe to use device APIs
+        }
+    
+        </script>
 
     <head>Testing</head>
 
